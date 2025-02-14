@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Motivational Quotes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <style>
+        body {
+            font-family: 'Arya', sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ✅ Sticky Header */
+        header {
+            background-color: #00695c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .home-icon {
+            color: white;
+            font-size: 22px;
+            text-decoration: none;
+            margin-left: 110px;
+            margin-right: 20px;
+            cursor: none;
+        }
+
+        /* ✅ Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 60px auto 70px;
+            padding: 0 20px;
+            flex-grow: 1;
+        }
+
+        /* ✅ Quotes Grid */
+        .quote-boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        /* ✅ Quotes Box */
+        .quote-box {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .quote-box:hover {
+            transform: translateY(-3px);
+        }
+
+        .quote-text {
+            font-size: 14px;
+            color: #3C3C3C;
+            text-align: left;
+            padding-right: 40px;
+            line-height: 1.4;
+            margin-top: 1px;
+            margin-bottom: -10px;
+        }
+
+        /* ✅ Buttons */
+        .buttons {
+            display: flex;
+            justify-content: right;
+            gap: 0px;
+        }
+
+        .button {
+            background: none;
+            margin: 0;
+            color: #ff7043;
+            border: none;
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .button:hover {
+            color: green;
+        }
+
+        /* ✅ Scrollbar Hide (Chrome, Edge, Safari) */
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+            color: #000000;
+        }
+
+        /* ✅ Scrollbar Hide (Firefox) */
+        html {
+            scrollbar-width: none;
+        }
+
+        /* ✅ Sticky Footer */
+        footer {
+            background-color: #00796b;
+            color: white;
+            padding: 0px;
+            text-align: center;
+            font-size: 14px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        /* ✅ Mobile Responsive */
+        @media (max-width: 768px) {
+            .quote-boxes {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ✅ Ad Container */
+        .ad-container {
+            text-align: center;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Motivational Quotes
+    <a href="/" class="home-icon">
+        <i class="fas fa-home"></i>
+    </a>
+</header>
+
+<!-- ✅ Ad Below Header -->
+<div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-app-pub-8223310334908240" 
+         data-ad-slot="9359520274"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="container">
+    <div id="quote-container" class="quote-boxes">
+        <!-- Quotes will be inserted here automatically -->
+    </div>
+</div>
+
+<!-- ✅ Ad Above Footer -->
+<div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-app-pub-8223310334908240" 
+         data-ad-slot="1090148010"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<footer>© InstaHipe</footer>
+
+<script>
+    // ✅ यहाँ अपने Quotes जोड़ें
+    const quotes = [
+        "मंज़िल उन्हीं को मिलती है जिनके सपनों में जान होती है, पंख से कुछ नहीं होता हौसलों से उड़ान होती है।",
+        "हौसले बुलंद कर रास्तों पर चल दे! तुझे तेरा मुकाम मिल जाएगा, बढ़कर अकेला तू पहल कर देखकर तुझको काफिला खुद बन जाएगा।",
+        "सफ़र में मुश्किलें आए तो हिम्मत और बढ़ जाती है, अगर कोई रास्ता रोके तो जुर्रत और बढ़ जाती है, अगर बिकने पर आ जाओ, तो घट जाता है दाम अक्सर!          ना बिकने का इरादा हो तो कीमत और बढ़ जाती है।",
+        "चेहरे तो समय के साथ सब बदल लेते है, लेकिन हालतों को बदलने वाला ही, हालातों की बात करता है।",
+        "जिंदगी में सफलता उन्हें ही मिलती है, जिनकी मेहनत और लग्न सच्ची होती है, पंख से कुछ नहीं होता, असली उड़ान हौसलों से मिलती है।",
+        "डर, दर्द और गम से नहीं मान हार, खुद के विचारों से बनाए पिंजरे से निकलकर देख, तू ही राजा है और तू ही है सिकंदर।",
+        "हर किसी के जीवन में मुश्किल और कठिनाइयां आती हैं, लेकिन इनसे हार नहीं माननी चाहिए।",
+        "सक्सेस के रास्ते में मुश्किल और कठिनाइयों के कई पत्थर आते हैं। लेकिन, यह एक चरण है, अंत नहीं।",
+        "रिस्क के बिना सक्सेस ही नहीं, सक्सेस के बिना लाइफ का मजा ही नहीं।",
+        "जिस तरह से घर से निकले बिना किसी जगह पर नहीं पहुंचा जा सकता, उसी तरह बिना मुश्किल के सफलता को भी हासिल नहीं किया जा सकता।",
+        "सफलता की ऊंचाई तक पहुंचने के लिए कोई लिफ्ट नहीं है, सफलता की ऊंचाई तक पहुंचने के लिए सिर्फ एक ही रास्ता है, मेहनत और हौसले की सीढ़ियां।",
+        "कभी-कभी मेहनत कर लेने से सफलता नहीं मिलती है। सफलता के लिए हर दिन मुश्किलों का सामना करना पड़ता है, तभी असफलता हार मानती है।",
+        "Successful बनने का एक ही तरीका है, जो भी काम आप शुरू करें पहले उसे पसंद करें"
+    ];
+
+    const container = document.getElementById("quote-container");
+
+    quotes.forEach(text => {
+        let quoteBox = document.createElement("div");
+        quoteBox.classList.add("quote-box");
+        quoteBox.innerHTML = `
+            <div class="quote-text">${text}</div>
+            <div class="buttons">
+                <button class="button copy-btn" onclick="copyQuote(this)">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+        `;
+        container.appendChild(quoteBox);
+    });
+
+    function copyQuote(button) {
+        const quoteText = button.closest(".quote-box").querySelector(".quote-text").innerText.trim();
+        navigator.clipboard.writeText(quoteText);
+    }
+</script>
+
+</body>
+</html>
